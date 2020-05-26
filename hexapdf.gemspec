@@ -1,7 +1,6 @@
-require 'rake'
 require_relative 'lib/hexapdf/version'
 
-PKG_FILES = FileList.new([
+PKG_FILES = Dir.glob([
                            'bin/*',
                            'lib/**/*.rb',
                            'data/**/*',
